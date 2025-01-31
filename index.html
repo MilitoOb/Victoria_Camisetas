@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Victoria Camisetas - Tienda de Camisetas de Fútbol</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('camisetas/pasto cancha.jpg'); /* Fondo con figuras */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .hero {
+            background-image: url('camisetas/pasto cancha.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+        }
+        .products {
+            background-image: url('camisetas/pasto cancha.jpg'); /* Fondo con figuras en la sección de productos */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .product {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #777;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #b12704;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilo del modal */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            z-index: 1; /* Asegura que esté encima de todo */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Si el contenido es grande, agrega scroll */
+            background-color: rgb(0,0,0); /* Fondo negro */
+            background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
+        }
+
+        /* El contenido del modal */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Puedes ajustar el tamaño según prefieras */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        /* El botón para cerrar el modal */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👑⚽Victoria Camisetas⚽👑</h1>
+        <p>¡Las mejores camisetas de fútbol retro y actuales solamente para vos!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Tienda</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="hero">
+        <p style="color: orange;"><b> <mark> ¡Hace tu compra hoy mismo y lleva la camiseta de tu equipo favorito!</mark> </b></p>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="camisetas/meca.jpeg" alt="Camiseta 1">
+            <h3>Camiseta Fútbol - Fiorentina Retro-Batistuta</h3>
+            <p>Iconica camiseta para un 9 como vos</p>
+            <p class="price">ARS$25.000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/supa.jpeg" alt="Camiseta 2">
+            <h3>Camiseta Fútbol - Manchester United - Garnacho</h3>
+            <p>Moderno y elegante.</p>
+            <p class="price">ARS$22.000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/pinba.jpeg" alt="Camiseta 3">
+            <h3>Camiseta Fútbol - Manchester United - Cristiano Ronaldo</h3>
+            <p>Clasico e irrepetible.</p>
+            <p class="price">ARS$25.000</p>
+            <button>Comprar Ahora</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Victoria Camisetas | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>¡Instrucciones para comprar tu camiseta!</h2>
+            <p>Para comprar la camiseta, seguinos en Instagram, escribinos y listo!. ¡Recibirás tu camiseta en pocos días!</p>
+            <a href="https://www.instagram.com/victoriacamisetas?igsh=MXJ6OWJmcDJ1NHVzbg%3D%3D&utm_source=qr" target="_blank" style="color: #008CBA; text-decoration: none; font-weight: bold;">Síguenos en Instagram</a>
+        </div>
+    </div>
+
+    <script>
+        // Obtener el modal
+        var modal = document.getElementById("myModal");
+
+        // Obtener los botones de "Comprar Ahora"
+        var btns = document.querySelectorAll(".product button");
+
+        // Obtener el elemento <span> (que cierra el modal)
+        var span = document.getElementsByClassName("close")[0];
+
+        // Cuando el usuario hace clic en cualquier botón "Comprar Ahora"
+        btns.forEach(function(btn) {
+            btn.addEventListener("click", function() {
+                modal.style.display = "block"; // Mostrar el modal
+            });
+        });
+
+        // Cuando el usuario hace clic en <span> (cerrar el modal)
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cuando el usuario hace clic en cualquier parte fuera del modal, cerrarlo
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
