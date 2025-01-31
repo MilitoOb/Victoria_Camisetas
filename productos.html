@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos - Victoria Camisetas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url(camisetas/lol.jpg);
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333; /* Fondo oscuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1em;
+        }
+
+        /* Barra de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444; /* Fondo de navegación */
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #555; /* Efecto hover */
+        }
+
+        /* Estilo para los productos */
+        .products {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap; /* Esto permite que los productos se acomoden en filas */
+            justify-content: space-between;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            width: 30%; /* Esto hará que cada producto ocupe el 30% del ancho del contenedor */
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #777;
+        }
+
+        .product .price {
+            font-size: 1.5em;
+            color: #b12704;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product button {
+            padding: 10px 20px;
+            background-color: #2c3e50; /* Botón oscuro */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .product button:hover {
+            background-color: #34495e; /* Efecto hover en botón */
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333; /* Fondo oscuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👑⚽Victoria Camisetas⚽👑</h1>
+        <p>¡Las mejores camisetas de fútbol retro y actuales solamente para vos!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="products">
+        <h2> <p style="color: yellow">  </h2>
+        <!-- Fila 1 -->
+        <div class="product">
+            <img src="camisetas/messi 2009.jpg" alt="Camiseta Barcelona">
+            <h3>Camiseta Fútbol - Barcelona - Retro - Messi 2009</h3>
+            
+            <p class="price">$25000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/palmeiras.jpg" alt="Camiseta Real Madrid">
+            <h3>Camiseta Fútbol - Palmeiras</h3>
+            
+            <p class="price">$22000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/garnacho negra.jpg" alt="Camiseta PSG">
+            <h3>Camiseta Fútbol - Manchester United Negra</h3>
+            
+            <p class="price">$22000</p>
+            <button>Comprar Ahora</button>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="product">
+            <img src="camisetas/juventus.jpg" alt="Camiseta Juventus">
+            <h3>Camiseta Fútbol - Juventus</h3>
+            
+            <p class="price">$22000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/peniarol.jpg" alt="Camiseta Manchester United">
+            <h3>Camiseta Fútbol - Peñarol</h3>
+            
+            <p class="price">$22000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/neymar.jpg" alt="Camiseta Bayern Múnich">
+            <h3>Camiseta Fútbol - Al Hilal Neymar Jr</h3>
+            
+            <p class="price">$22000</p>
+            <button>Comprar Ahora</button>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="product">
+            <img src="camisetas/ronaldinho 89.jpg" alt="Camiseta Chelsea">
+            <h3>Camiseta Fútbol - Milan Retro Ronaldinho</h3>
+            
+            <p class="price">$25000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/macallister.jpg" alt="Camiseta Liverpool">
+            <h3>Camiseta Fútbol - Liverpool</h3>
+            <p>Camisa roja, pasión pura.</p>
+            <p class="price">$22000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/arsenal.jpg" alt="Camiseta Arsenal">
+            <h3>Camiseta Fútbol - Arsenal - Henry Roja</h3>
+            <p>Siempre competitivos.</p>
+            <p class="price">$25000</p>
+            <button>Comprar Ahora</button>
+        </div>
+
+        <!-- Fila 4 -->
+        <div class="product">
+            <img src="camisetas/ronaldo gordo.jpg" alt="Camiseta Inter de Milan">
+            <h3>Camiseta Fútbol - Inter de Milan - Ronaldo Nazario</h3>
+            <p>La camiseta de los grandes.</p>
+            <p class="price">$25000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/henry 14.jpg" alt="Camiseta Boca Juniors">
+            <h3>Camiseta Fútbol - Arsenal - Henry Bordo</h3>
+            <p>El corazón de Argentina.</p>
+            <p class="price">$22000</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="product">
+            <img src="camisetas/dibu.jpg" alt="Camiseta River Plate">
+            <h3>Camiseta Fútbol - Selección Argentina - Dibu Martinez - Especial</h3>
+            <p>La camiseta más ganadora.</p>
+            <p class="price">$22000</p>
+            <button>Comprar Ahora</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Victoria Camisetas | Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
